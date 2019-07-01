@@ -1,0 +1,5 @@
+CREATE ROLE user_name NOSUPERUSER NOCREATEDB  NOCREATEROLE NOINHERIT LOGIN PASSWORD 'pwd' VALID UNTIL 'infinity';
+grant select on tab_abc to user_name;
+GRANT CONNECT ON DATABASE dbname TO username;
+GRANT USAGE ON SCHEMA schemaname TO username;
+GRANT SELECT ON schemaname.tablename TO username;
